@@ -1,5 +1,4 @@
 :root {
-      
     --DarkBlue: #0f172a;        
     --CardColor: #1e293b;        
     --CardHover: #334155;   
@@ -11,66 +10,40 @@
     --AccentBlue: #38bdf8;      
     --FontSize: 14px;
     --Radius: 12px;
-
-
-    
-
-}
-
-.HomePage {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    min-height: 550px; 
-    background-color: var(--DarkBlue);
-    box-sizing: border-box;
-    padding: 0 20px;
-}
-
-.BriefDescription {
-    width: 550px;
-    max-width: 100%; 
-    text-align: center;
-    font-size: 13px;
-    color: #ffffff;
-    line-height: 1.3rem;
-    margin-bottom: 35px;
-    box-sizing: border-box;
 }
 
 .Home-social-icons {
+    display: flex;
+    gap: 12px;
     margin-top: 20px;
 }
 
 .Home-social-icons a {
-      color: var(--AccentBlue);
-            font-size: 24px;
-            text-decoration: none;
-            transition: 0.3s ease;
-            background: rgba(56, 189, 248, 0.1);
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+    color: var(--AccentBlue);
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    background: rgba(56, 189, 248, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .Home-social-icons a:hover {
-     color: #fff;
-            transform: translateY(-5px);
-            background: var(--AccentBlue);
+    color: #fff;
+    transform: translateY(-5px);
+    background: var(--AccentBlue);
 }
 
-  .SkillsContainer span:hover {
-            background: rgba(56, 189, 248, 0.15);
-            transform: translateY(-2px);
-        }
-
+.SkillsContainer span:hover {
+    background: rgba(56, 189, 248, 0.15);
+    transform: translateY(-2px);
+}
 
 .Greet span {
     color: var(--AccentBlue);
@@ -100,8 +73,8 @@
 }
 
 .ViewCV:hover, .ContactMe:hover {
-      transform: translateY(-5px);
-     box-shadow: 0 8px 20px rgba(47, 128, 237, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(47, 128, 237, 0.5);
 }
 
 body {
@@ -113,11 +86,11 @@ body {
 }
 
 .ProfileImage {
+    margin-top: 20px;
     width: 230px;
     height: 230px;
     display: flex;
     border-radius: 50%;
-    border: 2px solid var(--AccentBlue);
     object-fit: cover;
 }
 
@@ -133,7 +106,6 @@ body {
     align-items: center;     
     justify-content: center; 
     max-width: 1200px;       
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -146,7 +118,6 @@ body {
     text-align: left;
     color: var(--MainFontColor);
 }
-
 
 .Description p {
     font-size: var(--FontSize);
@@ -166,6 +137,7 @@ body {
     gap: 25px;
     justify-content: center;
     padding: 50px 20px;
+    padding: 60px 0 80px 0;
 }
 
 .card {
@@ -216,19 +188,13 @@ body {
 }
 
 .edu-card {
-    display: flex;
-    width: 50%;
-    gap: 25px;
-    margin-left:  auto;
-    margin-right:  auto;
-    margin-top: 15px;
-    padding: 30px;
     background-color:var(--DarkBlue);
-    border-radius: var(--Radius);
-    box-sizing: border-box;
-    flex-wrap: wrap; 
+    border-radius: 12px;
+    padding: 30px;
+    margin: 0 auto 30px auto;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-
 
 .edu-icon {
     width: 60px;
@@ -267,23 +233,23 @@ body {
 }
 
 .education-section {
-    height: 400px;
     background-color:var(--CardColor);
     box-sizing: border-box;
-    padding: 20px;
+    padding: 80px 20px;
 }
 
 .EducationTitle {
     text-align: center;
-    margin-top: 30px; 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    color: white;
 }
 
 .SkillsContainer h2:first-child {
     display: inline-flex;
+    margin-top: 0px;
+    margin-bottom: 40px;
     justify-content: center;
-    margin-top: 0px;    
-    margin-bottom: 20px; 
     width: 100%;
 }
 
@@ -334,7 +300,7 @@ body {
 }
 
 .project-card {
-    background:var(--DarkBlue);
+    background: var(--DarkBlue);
     border-radius: 14px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -343,31 +309,34 @@ body {
     justify-content: center;
     min-height: 220px;
     align-items: center;
-    margin-left: 40px;
     box-sizing: border-box;
     height: 315px;
-    width: 80%;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
 }
-
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
 
 .project-content {
-    padding: 20px 25px;
-    margin: 20px;
+    padding: 16px 20px;
+    margin: 16px;
     box-sizing: border-box;
+    width: 100%; 
 }
+
 .project-content h3 {
     font-size: 22px;
     color: #38bdf8;
     margin-bottom: 10px;
 }
+
 .project-content p {
     font-size: 15px;
     margin-bottom: 12px;
-    color: var(--SecondaryFontColor);
+    color: white;
 }
 
 .tag-list {
@@ -385,12 +354,10 @@ body {
     color: var(--AccentBlue);
 }
 
-
 .navbar {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
     padding: 15px 20px;
     justify-content: center;
     background-color: var(--CardColor);
@@ -425,62 +392,27 @@ body {
 .navbar a:focus, .navbar a:hover {
     background-color: var(--CardHover);
     color:var(--AccentBlue);
-    outline: 2px dashed var(--AccentBlue); outline-offset: 3px; 
+    outline: 2px dashed var(--AccentBlue); 
+    outline-offset: 3px; 
 }
 
-@media (max-width: 768px) {
-    .Greet { font-size: 28px; margin-top: 50px; }
-    .JobTitle { font-size: 16px; }
-    .BriefDescription { width: 100%; max-width: 640px; padding: 0 10px; }
-
-    .AboutContent {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        padding: 0 12px;
-    }
-    .Description { max-width: 100%; }
-
-    .card { width: 100%; max-width: 700px; padding: 18px; }
-
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 18px;
-        padding: 0 12px;
-    }
-    .project-content { margin: 16px; padding: 16px; }
-
-    .ProfileImage { width: 180px; height: 180px; }
-
-    .edu-card { width: 100%; flex-direction: row; padding: 20px; }
-
-    .ExperienceSection { padding: 60px 12px; }
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 550px; 
+    background-color: var(--DarkBlue);
+    box-sizing: border-box;
+    padding: 30px 40px;
 }
 
-@media (max-width: 480px) {
-    .ProfileImage { width: 140px; height: 140px; } 
-    .SkillsContainer span {  font-size: 12px; padding: 4px 8px; }
-}
-
-@media (max-width: 769px) {
-    .project-card
-    {
-        height:450px;
-        padding: 0px;
-
-    }
-}
-
-.footer
-{
-
+.footer {
     width: 100%;
     background-color:var(--DarkBlue);
     color: white;          
     width: 100%;
-    padding: 15px 20px;
-
     font-size: 14px;
+    padding: 10px;
 }
 
 .footer-content {
@@ -489,9 +421,8 @@ body {
     justify-content: space-between; 
     align-items: center;
     max-width: 1200px;
-    padding: 15px 20px;
+    padding: 15px 15px;
     margin: 0 auto;
-    gap: 15px;
 }
 
 .footer-item {
@@ -500,8 +431,7 @@ body {
     gap: 6px;
 }
 
-.footer-item a
-{
+.footer-item a {
     color: white;
     text-decoration: none;
 }
@@ -515,19 +445,141 @@ body {
 }
 
 .footer-social a:hover {
-       color: #fff;
+    color: #fff;
     transform: translateY(-3px);
-
 }
 
-@media (max-width: 768px) {
+.BriefDescription {
+    width: 550px;
+    max-width: 100%; 
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 1.3rem;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+}
+
+.HomeImageContainer {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    
+       .project-card {
+        height: auto; 
+        min-height: 250px;
+        max-height: 500px;
+        overflow: hidden; 
+    }
+    
+    .project-content {
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-content p 
+    {
+        flex-grow: 1; 
+    }
+    .tag-list {
+        margin-top: auto; 
+    }
+    
+    .Greet {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+    .JobTitle {
+        font-size: 16px;
+    }
+    .AboutContent {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 0 12px;
+    }
+    .Description {
+        max-width: 100%;
+    }
+    .card {
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
+    }
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 18px;
+        padding: 0 12px;
+    }
+  
+    .ProfileImage {
+        width: 180px;
+        height: 180px;
+    }
+    .education-section {
+        padding: 60px 12px;
+    }
+    .ExperienceSection {
+        padding: 60px 12px;
+    }
     .footer-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 10px;
     }
-    .footer-social a {
-        margin-left: 6px;
+    .navbar {
+        padding: 10px;
+    }
+    .nav-list {
+        gap: 10px;
+    }
+    .BriefDescription {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+      .project-card {
+        height: auto;
+        min-height: 220px;
+        max-height: 400px;
+    }
+    
+    .project-content h3 {
+        font-size: 18px; 
+    }
+    
+    .project-content p {
+        font-size: 13px; 
+        line-height: 1.4;
+    }
+    
+    .Greet {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    .JobTitle {
+        font-size: 14px;
+    }
+    .InfoLinks {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .SkillsContainer span {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .About {
+        padding: 50px 0;
+    }
+    .HomePage {
+        padding: 20px 15px;
     }
 }
